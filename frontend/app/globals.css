@@ -1,0 +1,10 @@
+:root { color-scheme: dark; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background:#080c14; color:#d8e7ff; }
+.shell { display:grid; grid-template-columns: 1fr 2fr 1fr; min-height:100vh; gap:10px; padding:12px; }
+.panel, .center { background:linear-gradient(180deg,#0c1423,#0b101a); border:1px solid #1e3558; border-radius:12px; padding:12px; }
+h1 { margin:0; color:#78d7ff; letter-spacing:2px; }
+.subtitle { color:#8ba8cc; }
+.chatbox textarea { width:100%; min-height:120px; background:#02060f; color:#c8ddff; border:1px solid #274672; border-radius:8px; padding:8px; }
+.chatbox button { margin-top:8px; padding:8px 16px; background:#1e6ba8; color:white; border:none; border-radius:8px; cursor:pointer; }
+.item { font-size:12px; padding:8px; border-bottom:1px solid #173052; color:#b2c8e5; }
+.reply, .status { margin-top:12px; padding:10px; background:#091a30; border-radius:8px; }
