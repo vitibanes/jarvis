@@ -1,0 +1,21 @@
+model_tiers:
+  cheap_fast:
+    - openrouter/auto
+    - meta-llama/llama-3.1-8b-instruct:free
+    - mistralai/mistral-7b-instruct:free
+  balanced:
+    - openrouter/auto
+    - meta-llama/llama-3.1-8b-instruct:free
+    - mistralai/mistral-7b-instruct:free
+  reasoning:
+    - meta-llama/llama-3.1-8b-instruct:free
+    - openrouter/auto
+    - mistralai/mistral-7b-instruct:free
+  emergency_free:
+    - mistralai/mistral-7b-instruct:free
+    - meta-llama/llama-3.1-8b-instruct:free
+fallback_by_task_type:
+  direct: cheap_fast
+  memory: cheap_fast
+  tool: balanced
+  multi_step: reasoning
